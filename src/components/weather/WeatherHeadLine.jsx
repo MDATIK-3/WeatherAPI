@@ -8,7 +8,7 @@ import { getFormattedDate } from "../../utils/date-util";
 function WeatherHeadLine() {
   const { weatherData } = useContext(WeatherContext);
   const { temperature, location, time, climate } = weatherData;
-
+  
   function getWeatherIcon(weather) {
     switch (weather) {
       case "Sunny":
